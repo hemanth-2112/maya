@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>MayaBazaar</title>
+  <link rel="stylesheet" href="./CSS/index.css">
+  <link rel="icon" type="image/x-icon" href="./IMAGES/shopping (1).png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <script src="JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header class="header">
+    <div class="top-header d-flex align-items-center justify-content-between">
+      <!-- Logo Section -->
+      <div class="logo-container">
+        <img src="./IMAGES/shopping-cart (2).png" alt="Maya Bazar Logo" class="logo">
+        <div class="name">MayaBazaar</div>
+      </div>
+
+      <!-- Hamburger Menu for Small Screens -->
+      <button class="hamburger-menu btn btn-outline-secondary d-lg-none" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#navbarMenu" aria-controls="navbarMenu">
+        ☰
+      </button>
+
+      <!-- Navigation Links for Large Screens -->
+      <div class="nav-links d-none d-lg-flex">
+        <button class="address-bar">&#x1F30D; Address Bar</button>
+        <div class="search-container">
+          <input type="text" class="search-bar" placeholder="Search at Maya Bazaar">
+          <button class="search-button">🔍</button>
+        </div>
+        <button class="wishlist-button">&#x2764; My Wishlist</button>
+        <a href="./HTML/signIn.html" target="_blank">
+          <button class="account-button">&#x1F511; Sign In or Create Account</button>
+        </a>
+        <button class="orders">&#x1F6D2; My Orders</button>
+      </div>
+        <a href="#" class=" my-profile">My Profile
+            <i class="bi bi-person-circle"></i> <!-- Profile Icon -->
+        </a>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav d-none d-lg-flex">
+      <a href="#home">&#x1F3E0; Home</a>
+      <a href="#department">&#x1F3EC; Categories</a>
+      <a href="#our-products">&#x1F4E6; Our Products</a>
+      <a href="#trends">&#x1F4A1; New Trends</a>
+      <a href="#electronics">&#x1F4F1; Electronics</a>
+      <a href="#customer-service">&#x1F4AC; Customer Service</a>
+    </nav>
+
+    <!-- Offcanvas Menu for Small Screens -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarMenu" aria-labelledby="navbarMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="navbarMenuLabel">MayaBazaar Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Top Navigation -->
+        <button class="address-bar btn btn-outline-primary mb-3">&#x1F30D; Address Bar</button>
+        <div class="search-container mb-3">
+          <input type="text" class="form-control" placeholder="Search Everything at Maya Bazar">
+          <button class="btn btn-outline-secondary">🔍</button>
+        </div>
+        <button class="wishlist-button btn btn-outline-danger mb-3">&#x2764; My Wishlist</button>
+        <a href="./HTML/signIn.html" target="_blank">
+          <button class="account-button btn btn-outline-success mb-3">&#x1F511; Sign In or Create Account</button>
+        </a>
+        <button class="orders btn btn-outline-warning mb-3">&#x1F6D2; My Orders</button>
+        <hr>
+        <!-- Bottom Navigation -->
+        <nav class="nav flex-column">
+          <a class="nav-link" href="#home">&#x1F3E0; Home</a>
+          <a class="nav-link" href="#department">&#x1F3EC; Categories</a>
+          <a class="nav-link" href="#our-products">&#x1F4E6; Our Products</a>
+          <a class="nav-link" href="#trends">&#x1F4A1; New Trends</a>
+          <a class="nav-link" href="#electronics">&#x1F4F1; Electronics</a>
+          <a class="nav-link" href="#customer-service">&#x1F4AC; Customer Service</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
+  <main>
+    <section id="home" class="home-page">
+      <!-- Header -->
+      <div id="todayDeals" class="title">Today Deals</div>
+      <!-- Grid Container -->
+      <div class="grid-container">
+        <div class="grid-item deal1">
+          <div>
+            <h2>BLACK FRIDAY</h2>
+            <p>DEALS</p>
+            <button>Shop now</button>
+          </div>
+        </div>
+        <div class="grid-item deal2">
+          <div>
+            <h2>Thanksgiving Feast</h2>
+            <button>Shop all</button>
+          </div>
+        </div>
+        <div class="grid-item deal3">
+          <div>
+            <h2>Everything you need for a Holiday feast</h2>
+            <button>Shop all</button>
+          </div>
+        </div>
+        <div class="grid-item deal4">
+          <div>
+            <h2>Joy Filled Jammies for All</h2>
+            <button>Shop now</button>
+          </div>
+        </div>
+        <div class="grid-item deal5">
+          <div>
+            <h2>Up to 65% off</h2>
+            <button>Shop now</button>
+          </div>
+        </div>
+        <div class="grid-item deal6">
+          <div>
+            <h2>Holiday Gift HQ</h2>
+            <button>Shop now</button>
+          </div>
+        </div>
+        <div class="grid-item deal7">
+          <div>
+            <h2>Prepare Your Kitchen for the Future</h2>
+            <button>Shop now</button>
+          </div>
+        </div>
+        <div class="grid-item deal8">
+          <div>
+            <h2>Your 1 stop for holiday decor</h2>
+            <button>Shop now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="department">
+      <div class="title Category">Categories</div>
+      <div class="grid-container1">
+
+        <div class="grid-item1 Category1">
+          <div class="content">
+            <h2>Grocery</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category2">
+          <div class="content">
+            <h2>Electronics</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category3">
+          <div class="content">
+            <h2>Clothing, Shoes & Accessories</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category4">
+          <div class="content">
+            <h2>Home, Furniture & Appliances</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category5">
+          <div class="content">
+            <h2>Toys</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category6">
+          <div class="content">
+            <h2>Beauty</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category7">
+          <div class="content">
+            <h2>Books</h2>
+          </div>
+        </div>
+
+        <div class="grid-item1 Category8">
+          <div class="content">
+            <h2>Health & Wellness</h2>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="our-products">
+      <!--our products-->
+      <div class="our-products">
+        <h2 class="title o-product">Our Products</h2>
+        <div class="products-container">
+          <div class="product">
+            <img src="./IMAGES/pexels-zeleboba-29005357.jpg" alt="Product" class="image">
+            <h3>Inifinix ZERO 30 </h3>
+            <p class="price">₹14999</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐<span> 21</span>
+            </div>
+            <p class="description">The 50MP selfie camera has a f/2.45 lens with phase-detect autofocus.</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="./IMAGES/wgxv5_512.webp" alt="Product" class="image">
+            <h3>Premium Cotton Solid Shirt for Man</h3>
+            <p class="price">₹699</p>
+            <div class="rating">
+              ⭐⭐⭐⭐☆<span> 230</span>
+            </div>
+            <p class="description">A Shirt is a main apparel of attraction wear for men.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/pexels-pixabay-256450.jpg" alt="Product" class="image">
+            <h3>Journal The Passion Within</h3>
+            <p class="price">₹499</p>
+            <div class="rating">
+              ⭐⭐⭐⭐☆<span> 501</span>
+            </div>
+            <p class="description">The 50MP selfie camera has a f/2.45 lens with phase-detect autofocus.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/610z9IGnvUL._SX425_.jpg" alt="Product" class="image">
+            <h3>boAt Immortal 141 TWS Gaming Earbuds with Enx Tech</h3>
+            <p class="price">₹999</p>
+            <div class="rating">
+              ⭐⭐⭐☆☆<span> 441</span>
+            </div>
+            <p class="description">Up to 40 Hrs Playtime,Signature Sound,Beast Mode,Ipx4 Resistance.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/wwrsd_512.webp" alt="Product " class="image">
+            <h3>STI Men's Plain Regular Spread Collar olive Shirts.</h3>
+            <p class="price">₹239</p>
+            <div class="rating">
+              ⭐⭐☆☆☆<span>111</span>
+            </div>
+            <p class="description">Fabric : Polyester Sleeve Length : Short Sleeves Pattern : Checked.</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="./IMAGES/pexels-javaistan-12636163.jpg" alt="Product " class="image">
+            <h3>boAt Wave Sigma 3 w/Turn-by-Turn Navigation, 2.01" HD Display</h3>
+            <p class="price">₹1399</p>
+            <div class="rating">
+              ⭐⭐⭐⭐☆<span>94</span>
+            </div>
+            <p class="description">700+ Active Modes: Elevate your fitness routine with a diverse range of 700+ active
+              modes.</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="./IMAGES/51Pv4mnHS0L._SX300_SY300_QL70_FMwebp_.webp" alt="Product " class="image">
+            <h3>Vinayaka Fab Set of 2 Velvet Throw Pillow Covers - Soft Decorative Cushion Covers Cases</h3>
+            <p class="price">₹499</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐<span> 64</span>
+            </div>
+            <p class="description">Soft Decorative Cushion Covers Cases with Gold Leather for Sofa Bedroom Livingroom
+              Car.</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product">
+            <img src="./IMAGES/817HG+TJKhL._SL1500_.jpg" alt="Product 2" class="image">
+            <h3>
+              SOLARA Unbreakable Water Bottle 1 Litre</h3>
+            <p class="price">₹699</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐<span> 11,325</span>
+            </div>
+            <p class="description">Leakproof Durable BPA-Free Non-Toxic Water bottle for office,Water bottle for gym.
+            </p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/NoiseColorFitUltra3-JetBlack_1.webp" alt="Noise Smart Watch" class="image">
+            <h3>Noise ColorFit Pro 3 Smart Watch</h3>
+            <p class="price">₹4,499</p>
+            <div class="rating">
+              ⭐⭐⭐⭐<span> 25,432</span>
+            </div>
+            <p class="description">1.55" HD display, heart rate monitor, SpO2 tracking, waterproof, fitness and sleep
+              monitoring.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/Artboard1copy4_8daadcdf-ccd0-44d5-a32f-8d8b37e6bd66_700x.webp" alt="Wireless Earbuds"
+              class="image">
+            <h3>boAt Airdopes 441 Pro Wireless Earbuds</h3>
+            <p class="price">₹2,999</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐<span> 78,560</span>
+            </div>
+            <p class="description">Immersive audio with Bluetooth 5.0, 150 hours playback, IPX7 water resistance.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/mixer.jpg" alt="Mixer Grinder" class="image">
+            <h3>Prestige Iris 750W Mixer Grinder</h3>
+            <p class="price">₹3,199</p>
+            <div class="rating">
+              ⭐⭐⭐⭐<span> 15,860</span>
+            </div>
+            <p class="description">Powerful 750 watts motor, 3 stainless steel jars, one juicer jar, multipurpose
+              grinding.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/pigen.jpg" alt="Electric Kettle" class="image">
+            <h3>Pigeon by Stovekraft Electric Kettle 1.5 Litre</h3>
+            <p class="price">₹999</p>
+            <div class="rating">
+              ⭐⭐⭐⭐<span> 22,344</span>
+            </div>
+            <p class="description">High-grade stainless steel, 1500W, automatic cut-off, ideal for boiling water, tea,
+              and coffee.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/Portronicsstand.jpg" alt="Laptop Stand" class="image">
+            <h3>Portronics My Buddy+ Adjustable Laptop Stand</h3>
+            <p class="price">₹849</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐<span> 13,245</span>
+            </div>
+            <p class="description">Lightweight, adjustable stand, ergonomic design, suitable for laptops up to 15.6
+              inches.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/laptopback.jpg" alt="Laptop Backpack" class="image">
+            <h3>Lenovo 15.6" Laptop Backpack B210</h3>
+            <p class="price">₹1,199</p>
+            <div class="rating">
+              ⭐⭐⭐⭐<span> 8,564</span>
+            </div>
+            <p class="description">Water-resistant, lightweight, perfect for carrying laptops up to 15.6 inches and
+              daily essentials.</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product">
+            <img src="./IMAGES/61RYwHoeHjL.jpg" alt="Gaming Mouse" class="image">
+            <h3>Logitech G102 Light Sync Gaming Mouse</h3>
+            <p class="price">₹1,499</p>
+            <div class="rating">
+              ⭐⭐⭐⭐⭐<span> 42,865</span>
+            </div>
+            <p class="description">Advanced sensor for precise targeting, customizable RGB lighting, ergonomic design.
+            </p>
+            <button>Add to Cart</button>
+          </div>
+
+        </div>
+    </section>
+
+    <section class="new-trends" id="trends">
+      <h2 class="title">New Trends</h2>
+      <p class="trend-header">Trending On Social</p>
+      <div class="trends-container">
+        <div class="trend">
+          <img src="./IMAGES/411G1EtoIIL._SX300_SY300_QL70_FMwebp_.webp" alt="Product 1">
+          <h3>iQOO Z9x 5G (Tornado Green, 6GB RAM, 128GB Storage)</h3>
+          <p>From ₹16999</p>
+        </div>
+        <div class="trend">
+          <img src="../IMAGES/71708U5mylL._SX679_.jpg" alt="Product 2">
+          <h3>Apple iPhone 16 (128 GB) - White</h3>
+          <p>From ₹ 77,432</p>
+        </div>
+        <div class="trend">
+          <img src="../IMAGES/51F1WnXCouL._SL1000_.jpg" alt="Product 2">
+          <h3>KENT Supreme Alkaline RO Water Purifier | INR 1000 Off on Exchange </h3>
+          <p>From ₹14999</p>
+        </div>
+        <div class="trend">
+          <img src="../IMAGES/71ea0qc4QCL._SX569_.jpg" alt="Product 2">
+          <h3>Fire-Boltt Ninja Call Pro Max 51.05mm (2.01 inch) Display Smart Watch </h3>
+          <p>From ₹1299</p>
+        </div>
+        <div class="trend">
+          <img src="./IMAGES/pexels-ali-muftuogullari-1151175-3693367.jpg" alt="Product 1">
+          <h3>FEEL SOFT TOYS Birthday Gift for Girls Plush & Stuffed Toys</h3>
+          <p>From ₹899</p>
+        </div>
+        <div class="trend">
+          <img src="./IMAGES/pexels-pexels-user-558344506-16769670.jpg" alt="Product 2">
+          <h3>A Bottle with a Vitamin C Serum between Lemon Slices</h3>
+          <p>From ₹432</p>
+        </div>
+        <div class="trend">
+          <img src="./IMAGES/6182na8zwFL._SX522_.jpg" alt="Product 2">
+          <h3>Lifelong PVC Hex Dumbbells Pack of 2 (5kg*2) Black</h3>
+          <p>From ₹509</p>
+        </div>
+        <div class="trend">
+          <img src="/IMAGES/81A2i0ClcGL._SX679_.jpg" alt="Product 2">
+          <h3>Fur Jaden 55 LTR Rucksack Travel Backpack Bag for Trekking</h3>
+          <p>From ₹929</p>
+        </div>
+        <div class="trend">
+          <img src="./IMAGES/618A55XyJQL._SX425_.jpg" alt="Product 2">
+          <h3>Kreo Tundra 5 Fans RGB Laptop Cooling Pad with Dual USB Port</h3>
+          <p>From ₹1,929</p>
+        </div>
+        <div class="trend">
+          <img src="./IMAGES/61xoIYRTsdL._SX425_.jpg" alt="Product 2">
+          <h3>Portronics Toad Ergo Vertical Advanced Wireless Ergonomic Mouse 2.4Ghz</h3>
+          <p>From ₹589</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="Electronics" id="electronics">
+      <div class="title electronic">Electronics</div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/headphones.avif" alt="Sony WH-1000XM4 Noise Cancelling Headphones" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Sony WH-1000XM4 Noise Cancelling Headphones</h3>
+            <p class="product-price">₹29,990</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 18,423</span></div>
+            <p class="product-description">Industry-leading noise cancellation, 30-hour battery, wireless Bluetooth
+              over-ear headphones.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/lap.webp" alt="Lenovo IdeaPad 3 Laptop" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Lenovo IdeaPad 3 Laptop</h3>
+            <p class="product-price">₹47,999</p>
+            <div class="product-rating">⭐⭐⭐⭐<span> 6,583</span></div>
+            <p class="product-description">15.6-inch FHD, Intel Core i5, 8GB RAM, 512GB SSD, Windows 10, perfect for
+              work and entertainment.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/914hFeTU2-L._AC_UF1000,1000_QL80_.jpg" alt="Canon EOS 1500D DSLR Camera"
+              class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Canon EOS 1500D DSLR Camera</h3>
+            <p class="product-price">₹37,999</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 8,927</span></div>
+            <p class="product-description">24.1MP camera, WiFi enabled, compatible with Canon lenses, ideal for both
+              beginners and enthusiasts.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/61cQtOqCQdL._SX679_.jpg" alt="Amazon Echo Dot (4th Gen)" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Amazon Echo Dot (4th Gen)</h3>
+            <p class="product-price">₹4,499</p>
+            <div class="product-rating">⭐⭐⭐⭐<span> 32,543</span></div>
+            <p class="product-description">Smart speaker with Alexa, improved bass, and voice control for music, home
+              automation, and more.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/headphone.webp" alt="Bose QuietComfort 35 II Wireless Headphones" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Bose QuietComfort 35 II Wireless Headphones</h3>
+            <p class="product-price">₹28,999</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 15,728</span></div>
+            <p class="product-description">World-class noise cancellation, 20-hour battery life, Alexa-enabled for voice
+              access to music and more.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/lg tv.jpg" alt="LG OLED65CXPUA Alexa Built-In CX 65" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">LG OLED65CXPUA Alexa Built-In CX 65</h3>
+            <p class="product-price">₹2,99,990</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 3,100</span></div>
+            <p class="product-description">OLED display, 4K resolution, Dolby Vision, and Alexa built-in.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/71WvrXbXIcL._SX569_.jpg" alt="Samsung Galaxy Watch 5" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Samsung Galaxy Watch 5</h3>
+            <p class="product-price">₹25,999</p>
+            <div class="product-rating">⭐⭐⭐⭐<span> 9,478</span></div>
+            <p class="product-description">Track your health with advanced sensors, long-lasting battery, and seamless
+              connectivity with Samsung devices.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/Apple iPhone 14 Pro.jpeg" alt="Apple iPhone 14 Pro" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Apple iPhone 14 Pro</h3>
+            <p class="product-price">₹1,29,900</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 12,354</span></div>
+            <p class="product-description">Experience the future with the latest iPhone 14 Pro, featuring an A16 Bionic
+              chip, 48MP camera, and Dynamic Island.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/bose.png" alt="Bose QuietComfort 35 II" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Bose QuietComfort 35 II</h3>
+            <p class="product-price">₹29,000</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 8,200</span></div>
+            <p class="product-description">Noise-cancelling, 20-hour battery life, Alexa and Google Assistant
+              integration.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/cannon.jpg" alt="Apple iPhone 14 Pro" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Canon EOS R6 Mark</h3>
+            <p class="product-price">₹2,49,995</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 1,254</span></div>
+            <p class="product-description">Capture stunning photos and videos with the Canon EOS R6 Mark II featuring a
+              24.2 MP sensor and advanced image stabilization.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/75_inch_smart_tv_1714649551876_1714649561405.avif" alt="Marshall Major IV"
+              class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Marshall Major IV</h3>
+            <p class="product-price">₹15,999</p>
+            <div class="product-rating">⭐⭐⭐⭐<span> 3,500</span></div>
+            <p class="product-description">Iconic design, wireless charging, 80-hour battery life, foldable design.</p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-image-container">
+            <img src="./IMAGES/images.jpeg" alt="Philips PH805" class="product-image">
+          </div>
+          <div class="product-details">
+            <h3 class="product-title">Philips PH805</h3>
+            <p class="product-price">₹12,500</p>
+            <div class="product-rating">⭐⭐⭐⭐⭐<span> 2,900</span></div>
+            <p class="product-description">Active noise cancelling, high-res audio, 30-hour battery life, lightweight.
+            </p>
+            <button class="product-button">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="Customer-service" id="customer-service">
+      <div class="Customer">
+        <h2 class="title">Customer Service</h2>
+        <h3>Hi, Hemanth. What can we help you with?</h3>
+        <h2>Some things you can do here.</h2>
+        <div class="service-container">
+
+          <div class="Service">
+            <h2><button>Your orders</button></h2>
+            <p><a href="" class="s-order">Track Orers</a></p>
+            <p><a href="" class="s-order">Edit or Cancel Order</a></p>
+          </div>
+
+          <div class="Service">
+            <h2><button>Return and Refunds</button></h2>
+            <p><a href="" class="s-order">Return or Exchange Items</a></p>
+          </div>
+
+          <div class="Service">
+            <h2><button>Manage Address</button></h2>
+            <p><a href="" class="s-order">Add Address or Update Address</a></p>
+          </div>
+
+          <div class="Service">
+            <h2><button>Account Setting</button></h2>
+            <p><a href="" class="s-order">Update Profile</a></p>
+            <p><a href="" class="s-order">Change Password</a></p>
+          </div>
+
+          <div class="Service">
+            <h2><button>Payment Setting</button></h2>
+            <p><a href="" class="s-order">Add or edit existing payment Details</a></p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="back-to-top">
+      <a href="#home">
+        <button id="home">
+          Back to Top
+        </button>
+      </a>
+    </div>
+
+    <section class="footer">
+      <div class="footer-container">
+        <div class="footer-item">
+          <h3><a href="">Explore</a></h3>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Shop All</a></li>
+            <li><a href="">New Arrivals</a></li>
+            <li><a href="">Best Sellers</a></li>
+            <li><a href="">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3><a href="">Contact us</a></h3>
+          <ul>
+            <li><a href="tel:+18001234567">+1 800 123 4567</a></li>
+            <li><a href="mailto:support@mayabazaar.com">support@mayabazaar.com</a></li>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Live Chat</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3><a href="">Follow us</a></h3>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-item">
+          <h3><a href="">Information</a></h3>
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms & Conditions</a></li>
+            <li><a href="">Shipping & Returns</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copy-rights">
+        <p>© 1996-2024, MayaBazaar.com, info or its affiliates</p>
+      </div>
+    </section>
+
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="../IMAGES/shopping (1).png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/admin.css">
+   
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="../IMAGES/ecommerce.png" alt="Logo">
+                MayaBazaar
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Center Search Bar -->
+                <form class="d-flex mx-auto search-bar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Product">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#customer">Customers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#order">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#admin">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="grid-container">
+            <!-- Product Management Section -->
+            <div class="section" id="Product">
+                <h2>Product Management</h2>
+                <a href="#" id="loadAddProductModal" class="btn">Add Product</a>
+                <a href="#" class="btn" data-bs-toggle="modal" data-bs-target="#updateProductModal" id="123">Update Product</a>
+                <a href="#" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteProductModal"  id="delete">Delete Product</a>
+                <a href="#">Get Product by ID</a>
+                <a href="#">Get All Products</a>
+            </div>
+
+
+            <!-- Customer Management Section -->
+            <div class="section" id="customer">
+                <h2>Customer Management</h2>
+                <a href="#">View All Users</a>
+                <a href="#">Delete Customer</a>
+                <a href="#">View Customer</a>
+            </div>
+
+            <!-- Orders Management Section -->
+            <div class="section" id="order">
+                <h2>Orders Management</h2>
+                <a href="#">View Orders</a>
+                <a href="#">Update Order</a>
+                <a href="#">Delete Order</a>
+            </div>
+
+            <!-- Admin Management Section -->
+            <div class="section" id="admin">
+                <h2>Admin Management</h2>
+                <a href="#">Add Admin</a>
+                <a href="#">Update Admin</a>
+                <a href="#">View All Admins</a>
+            </div>
+        </div>
+    </div>
+    <div id="modalContainer"></div>
+
+    <div class="container mt-5">
+        <!-- Dashboard Overview -->
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <div class="card bg-primary text-white text-center">
+                    <div class="card-body">
+                        <h5>Total Sales</h5>
+                        <h2>₹1,25,000</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-success text-white text-center">
+                    <div class="card-body">
+                        <h5>New Orders</h5>
+                        <h2>123</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card bg-warning text-dark text-center">
+                    <div class="card-body">
+                        <h5>Pending Shipments</h5>
+                        <h2>45</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="row mb-4">
+            <h3 class="mb-3">Quick Actions</h3>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Add Product</h6>
+                        <a href="#" class="btn btn-primary btn-sm">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Manage Customers</h6>
+                        <a href="#" class="btn btn-primary btn-sm">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>View Orders</h6>
+                        <a href="#" class="btn btn-primary btn-sm">Go</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h6>Analytics</h6>
+                        <a href="#" class="btn btn-primary btn-sm">Go</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Recent Activities -->
+        <div class="row mb-4">
+            <h3 class="mb-3">Recent Activities</h3>
+            <div class="col-md-12">
+                <ul class="list-group">
+                    <li class="list-group-item">Order #12345 has been shipped.</li>
+                    <li class="list-group-item">New user registered: John Doe.</li>
+                    <li class="list-group-item">Product "Wireless Mouse" was added to inventory.</li>
+                    <li class="list-group-item">Admin Jane updated the price of "Smartphone X".</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Monthly Analytics -->
+        <div class="row">
+            <h3 class="mb-3">Monthly Overview</h3>
+            <div class="col-md-6">
+                <img src="https://media.giphy.com/media/KitXC0m4Tgi24c6HQj/giphy.gif?cid=ecf05e479nszcv8601u6z1gqr5sm6turykl4nr2n39izl2gv&ep=v1_gifs_related&rid=giphy.gif&ct=g"
+                    class="img-fluid" alt="Sales Graph">
+                <p class="text-center mt-2">Sales Performance</p>
+            </div>
+            <div class="col-md-6">
+                <img src="https://media.giphy.com/media/OMMUQuvlEAqLATUU3j/giphy.gif?cid=ecf05e471d4vhmbfqqtq3liqyg2xtolv7r35j3yzntakv4wr&ep=v1_gifs_related&rid=giphy.gif&ct=g"
+                    class="img-fluid" alt="Orders Graph" style="height: 270px; width: 100%;">
+                <p class="text-center mt-2">Orders Overview</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="footer bg-dark text-light py-3">
+        <div class="text-center">
+            <p class="mb-0">© 1996-2024, MayaBazaar.com, info or its affiliates</p>
+        </div>
+    </section>
+    <script src="../JS/admin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

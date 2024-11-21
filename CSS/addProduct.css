@@ -1,0 +1,32 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.modal-dialog {
+    max-width: 800px;
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+.modal-body {
+    /* padding: 20px; */
+    background-color: white;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+}
+
+
+.confirmation-message {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+    margin-top: 20px;
+}
